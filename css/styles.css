@@ -226,6 +226,7 @@ h1 {
   position: relative;
   overflow: hidden;
   height: 294px;
+  z-index: -1;
 }
 
 .what-we-do-item-title {
@@ -564,11 +565,10 @@ address {
 }
 
 #footer-newsletter-suscription-input {
-  box-sizing: border-box;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+/* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
   border-radius: 4px;
   background-color: var(--dark-gray);
   color: var(--white);
@@ -616,7 +616,7 @@ address {
 }
 
 #modal {
-  position: relative;
+  position: absolute;
   width: 528px;
   height: 581px;
   left: 50%;

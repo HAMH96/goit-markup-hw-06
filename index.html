@@ -70,6 +70,83 @@
             </button>
           </div>
         </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div id="modal">
+            <button id="close-modal" data-modal-close>
+              <svg id="icon-close-modal">
+                <use href="images/icons.svg#icon-close-modal"></use>
+              </svg>
+            </button>
+            <form id="modal-form">
+              <p id="modal-form-title">
+                Deje sus datos, nos contactaremos con usted
+              </p>
+              <div id="modal-form-inputs">
+                <label for="customer-name" class="modal-form-label">
+                  Nombre
+                </label>
+                <input
+                  id="customer-name"
+                  class="modal-form-input"
+                  type="text"
+                  name="customer-name"
+                  placeholder=" "
+                />
+                <svg id="icon-form-person" class="form-icon">
+                  <use href="images/icons.svg#icon-form-person"></use>
+                </svg>
+                <label for="customer-tel" class="modal-form-label">
+                  Teléfono
+                </label>
+                <input
+                  id="customer-tel"
+                  class="modal-form-input"
+                  type="tel"
+                  name="customer-tel"
+                  placeholder=" "
+                />
+                <svg id="icon-form-phone" class="form-icon">
+                  <use href="images/icons.svg#icon-form-phone"></use>
+                </svg>
+                <label for="customer-email" class="modal-form-label">
+                  E-mail
+                </label>
+                <input
+                  id="customer-email"
+                  class="modal-form-input"
+                  type="email"
+                  name="customer-email"
+                  placeholder=" "
+                />
+                <svg id="icon-form-email" class="form-icon">
+                  <use href="images/icons.svg#icon-form-email"></use>
+                </svg>
+                <label for="customer-feedback" class="modal-form-label">
+                  Comentarios
+                </label>
+                <textarea
+                  id="customer-feedback"
+                  class="modal-form-textarea"
+                  name="customer-feedback"
+                  rows="5"
+                  placeholder="Introduzca el texto"
+                ></textarea>
+                <label id="modal-form-agreement-text">
+                  <input
+                    type="checkbox"
+                    name="agreement"
+                    id="modal-form-agreement-checkbox"
+                  />
+                  Estoy de acuerdo con el boletín informativo y acepto los
+                  Términos y Condiciones
+                </label>
+                <div id="modal-form-submit-area">
+                  <button type="submit" id="modal-form-submit">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
       <!-- attributes -->
       <section id="attributes-section">
@@ -415,78 +492,6 @@
           </ul>
         </div>
       </section>
-      <div class="backdrop is-hidden" data-modal>
-        <div id="modal">
-          <button id="close-modal" data-modal-close>
-            <svg id="icon-close-modal">
-              <use href="images/icons.svg#icon-close-modal"></use>
-            </svg>
-          </button>
-          <form id="modal-form">
-            <p id="modal-form-title">
-              Deje sus datos, nos contactaremos con usted
-            </p>
-            <div id="modal-form-inputs">
-              <label for="customer-name" class="modal-form-label">
-                Nombre
-              </label>
-              <input
-                id="customer-name"
-                class="modal-form-input"
-                type="text"
-                name="customer-name"
-                placeholder=" "
-              />
-              <svg id="icon-form-person" class="form-icon">
-                <use href="images/icons.svg#icon-form-person"></use>
-              </svg>
-              <label for="customer-tel" class="modal-form-label">
-                Teléfono
-              </label>
-              <input
-                id="customer-tel"
-                class="modal-form-input"
-                type="tel"
-                name="customer-tel"
-                placeholder=" "
-              />
-              <svg id="icon-form-phone" class="form-icon">
-                <use href="images/icons.svg#icon-form-phone"></use>
-              </svg>
-              <label for="customer-email" class="modal-form-label">
-                E-mail
-              </label>
-              <input
-                id="customer-email"
-                class="modal-form-input"
-                type="email"
-                name="customer-email"
-                placeholder=" "
-              />
-              <svg id="icon-form-email" class="form-icon">
-                <use href="images/icons.svg#icon-form-email"></use>
-              </svg>
-              <label for="customer-feedback" class="modal-form-label">
-                Comentarios
-              </label>
-              <textarea
-                id="customer-feedback"
-                class="modal-form-textarea"
-                name="customer-feedback"
-                rows="5"
-                placeholder="Introduzca el texto"
-              ></textarea>
-              <label id="modal-form-agreement-text">
-                <input type="checkbox" name="agreement" id="modal-form-agreement-checkbox"/>
-                Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
-              </label>
-              <div id="modal-form-submit-area">
-                <button type="submit" id="modal-form-submit">Enviar</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
     </main>
     <!-- footer -->
     <footer>
@@ -553,6 +558,7 @@
               </label>
               <input
                 id="footer-newsletter-suscription-input"
+                class="footer-email-input"
                 type="email"
                 name="suscription-email"
                 required
